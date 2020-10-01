@@ -1,0 +1,13 @@
+.color-box {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.disabled {
+    background-color: grey;
+}
+
+button {
+    background-color: blue;
+}
