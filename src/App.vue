@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link v-bind:to="{ name: 'event-list' }">List</router-link> |
+      <router-link v-bind:to="{ name: 'event-show' }">Event show</router-link> |
+      <router-link v-bind:to="{ name: 'event-create' }">Event create</router-link>
     </div>
     <router-view />
   </div>
