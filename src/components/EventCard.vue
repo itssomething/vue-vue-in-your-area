@@ -1,13 +1,15 @@
 <template>
-  <h1></h1>
+  <div>
+    <router-link :to="{ name: 'event-show', params: { id: event.id } }">View event # {{ event.id }}</router-link>
+    <br>
+    <span>{{ event.title }}</span>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      quote: 'I want to be'
-    }
+  props: {
+    event: Object
   }
 }
 </script>
